@@ -288,53 +288,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 650px) {
-  .darkmode-switch {
-    width: 100%;
-  }
-  header div {
-    width: 90%;
-    margin-bottom: 0;
-  }
-
-  .main-section {
-    width: 90%;
-  }
-  .main-section h1 {
-    margin-bottom: 50px;
-  }
-  h1.section-title {
-    margin-bottom: 10px;
-  }
-  .main-section a {
-    text-decoration: none;
-  }
-  a.img-link {
-    display: none;
-  }
-  .project .description {
-    padding-left: 0;
-  }
-  footer {
-    height: auto;
-  }
-  footer div {
-    width: 90%;
-    padding: 25px;
-    flex-direction: column;
-    text-align: center;
-  }
-  footer div .social,
-  footer div .mail {
-    align-items: center;
-  }
-  .profile {
-    transform: translate(-180px, -70px);
-    width: 300px;
-    height: 300px;
-  }
-}
-
 form {
   width: 100%;
   background-color: #fefefe;
@@ -412,9 +365,12 @@ form button:hover {
   text-align: center;
   color: white;
   top: 0px;
-  height: 50px;
+  min-height: 50px;
   font-size: 17px;
-  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
 }
 
 .form-message.error {
@@ -425,4 +381,51 @@ form button:hover {
 .form-message.success {
   background-color: rgb(28, 168, 0);
   visibility: visible;
+}
+
+@media screen and (max-width: 650px) {
+  .darkmode-switch {
+    width: 100%;
+  }
+  header div {
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+  .main-section h1 {
+    margin-bottom: 50px;
+  }
+  h1.section-title {
+    margin-bottom: 10px;
+  }
+  .main-section a {
+    text-decoration: none;
+  }
+  a.img-link {
+    display: none;
+  }
+  .project .description {
+    padding-left: 0;
+  }
+  footer {
+    height: auto;
+  }
+  footer div {
+    width: 90%;
+    padding: 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer div .social,
+  footer div .mail {
+    align-items: center;
+  }
+  .profile {
+    transform: translate(-180px, -70px);
+    width: 300px;
+    height: 300px;
+  }
 }
