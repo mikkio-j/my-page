@@ -5,7 +5,7 @@
     <title>Mikołaj J. (@mikkio) - front end developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:image" content="https://mikkio.com/images/fb.PNG" />
-    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <div class="form-message">Error: name is required</div>
     <div class="dark-selector">
       <div class="darkmode-switch">
         <a>
@@ -37,27 +38,57 @@
         <section class="main-section">
           <h1>Hi, I'm Mikołaj! 👋</h1>
           <p>
-           self-taught front-end developer that enjoys learning new skills and coming up with solutions to interesting problems. For more details, you can reach me through the following links: <a href="https://github.com/mikkio-j/" target="_blank">github</a>, <a href="https://www.linkedin.com/in/miko%C5%82aj-j%C4%99drzejewski-a03556177/" target="_blank">linkedin</a>. Alternatively, you can send me an email to <b>mikkiodev@gmail.com</b>
+            self-taught front-end developer that enjoys learning new skills and
+            coming up with solutions to interesting problems. For more details,
+            you can reach me through the following links:
+            <a href="https://github.com/mikkio-j/" target="_blank">github</a>,
+            <a
+              href="https://www.linkedin.com/in/miko%C5%82aj-j%C4%99drzejewski-a03556177/"
+              target="_blank"
+              >linkedin</a
+            >. Alternatively, you can send me an email to
+            <b>mikkiodev@gmail.com</b>
           </p>
           <p>
-            Recently I have been using MERN stack which consists of MongoDB, Express, React and Node.js. Aside from that I use Redux, Thunk, Socket.io, Git and Heroku for state management, live updates, version control and hosting.
+            Recently I have been using MERN stack which consists of MongoDB,
+            Express, React and Node.js. Aside from that I use Redux, Thunk,
+            Socket.io, Git and Heroku for state management, live updates,
+            version control and hosting.
           </p>
           <div class="projects" id="projects">
             <h1>Featured projects:</h1>
             <div class="project first">
-              
-              <img class="img" src="./images/friendwich.PNG" alt="Friendwich app" />
-           
+              <img
+                class="img"
+                src="./images/friendwich.PNG"
+                alt="Friendwich app"
+              />
+
               <div class="description">
                 <h3>Friendwich</h3>
                 <p>
-                  social media app that allows you to connect with others through text updates, photos and private messages
+                  social media app that allows you to connect with others
+                  through text updates, photos and private messages
                 </p>
-                <p><span>Stack: </span>react, redux, mongoose, express, socket.io, jsonwebtoken, sass</p>
-                <div><a href="https://github.com/mikkio-j/friendwich" target="_blank">Github</a> <a href="https://friendwich.herokuapp.com/"  target="_blank">DEMO</a></div>
+                <p>
+                  <span>Stack: </span>react, redux, mongoose, express,
+                  socket.io, jsonwebtoken, sass
+                </p>
+                <div>
+                  <a
+                    href="https://github.com/mikkio-j/friendwich"
+                    target="_blank"
+                    >Github</a
+                  >
+                  <a href="https://friendwich.herokuapp.com/" target="_blank"
+                    >DEMO</a
+                  >
+                </div>
               </div>
             </div>
-            <!-- <div class="project second">
+          </div>
+
+          <!-- <div class="project second">
               <div class="description left">
                 <h3 class="left">Project #2</h3>
                 <p class="left">
@@ -86,6 +117,31 @@
               </div>
             </div>
           </div> -->
+          <h1>Contact me:</h1>
+          <form class="dark-selector" id="form">
+            <div class="form-control">
+              <label>
+                Your email:
+                <input
+                  type="text"
+                  name="_replyto"
+                  class="dark-selector"
+                  id="email"
+                />
+              </label>
+            </div>
+            <div class="form-control">
+              <label>
+                Your message:
+                <textarea
+                  name="message"
+                  class="dark-selector"
+                  id="message"
+                ></textarea>
+              </label>
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </section>
       </section>
       <footer id="contact" class="dark-selector">
@@ -93,7 +149,8 @@
           <div class="mail">
             <p>This website:</p>
             <span
-              >just a simple landing page made in one sunny day with some help of Ethiopian coffee and an Aeropress❤️</span
+              >just a simple landing page made in one sunny day with some help
+              of Ethiopian coffee and an Aeropress❤️</span
             >
           </div>
           <div class="social">
