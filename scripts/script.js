@@ -40,7 +40,7 @@ function showError(message) {
 // Show success message
 
 function showSuccess() {
-  formMessage.innerText = 'Success! Thank you for reaching out to me!😊';
+  formMessage.innerText = 'Message sent! Thank you for reaching out to me!😊';
   formMessage.classList.add('success');
   setTimeout(function () {
     formMessage.classList.remove('success');

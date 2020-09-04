@@ -359,7 +359,6 @@ form button:hover {
 
 .form-message {
   position: fixed;
-  /* visibility: hidden; */
   z-index: 5;
   width: 100%;
   text-align: center;
