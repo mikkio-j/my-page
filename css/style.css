@@ -359,30 +359,35 @@ form button:hover {
 
 .form-message {
   position: fixed;
-  visibility: hidden;
+  /* visibility: hidden; */
   z-index: 5;
   width: 100%;
   text-align: center;
   color: white;
-  top: 0px;
+  top: -50px;
   min-height: 50px;
   font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px 10px;
+  transition: 0.5s;
 }
 
 .form-message.error {
   background-color: rgb(194, 0, 0);
-  visibility: visible;
+  top: 0px;
 }
 
 .form-message.success {
   background-color: rgb(28, 168, 0);
-  visibility: visible;
+  top: 0px;
 }
-
+@media (max-width: 450px) {
+  .form-message {
+    top: -100px;
+  }
+}
 @media screen and (max-width: 650px) {
   .darkmode-switch {
     width: 100%;
