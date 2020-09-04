@@ -154,7 +154,13 @@ header nav a:hover {
   line-height: 25px;
 }
 
-.project a {
+.img-link {
+  display: block;
+  height: 195px;
+  width: 40%;
+}
+
+.project-links a {
   text-decoration: none;
   color: #fff;
   background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
@@ -175,8 +181,7 @@ header nav a:hover {
 }
 
 .project .img {
-  height: 195px;
-  width: 40%;
+  width: 100%;
   object-fit: contain;
   overflow: hidden;
   transition: 0.2s;
@@ -291,16 +296,20 @@ footer a:hover {
     width: 90%;
     margin-bottom: 0;
   }
+
   .main-section {
     width: 90%;
   }
   .main-section h1 {
     margin-bottom: 50px;
   }
+  h1.section-title {
+    margin-bottom: 10px;
+  }
   .main-section a {
     text-decoration: none;
   }
-  .project .img {
+  a.img-link {
     display: none;
   }
   .project .description {
