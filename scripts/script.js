@@ -48,14 +48,13 @@ function showSuccess() {
 }
 
 // Check required
-function checkRequired(inputArr) {
-  inputArr.forEach(function (input) {
-    if (input.value.trim() === '') {
-      showError(`${getFieldName(input)} is required`);
-      return false;
-    }
-  });
-  return true;
+function checkRequired(input) {
+  if (input.value.trim() === '') {
+    showError(`${getFieldName(input)} is required`);
+    return false;
+  } else {
+    return true;
+  }
 }
 
 // Check email is valid
@@ -96,7 +95,7 @@ function ajax(method, url, data, success, error) {
 // Event listener
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  if (checkRequired([email, message]) && checkEmail(email)) {
+  if (checkRequired(email) && checkRequired(message) && checkEmail(email)) {
     const data = new FormData(form);
     ajax('POST', 'https://formspree.io/mbjznrlr', data);
   }
