@@ -310,16 +310,12 @@ form {
 }
 .form-control input,
 textarea {
-  border: 2px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
   border-radius: 4px;
   display: block;
   width: 100%;
   padding: 10px;
   font-size: 14px;
-}
-
-.form-control input:-webkit-autofill {
-  background-color: #f0f0f0;
 }
 
 .form-control textarea {
@@ -339,6 +335,16 @@ textarea {
 textarea:focus {
   outline: 0;
   border-color: #786666;
+}
+
+.form-control input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #f6f7f8 inset !important;
 }
 
 form button {
