@@ -13,7 +13,7 @@ body {
   /* position: absolute; */
   background-image: url(../images/profilealt.gif);
   background-size: cover;
-  transform: translate(-18px, 0);
+  transform: translate(-5px, -20px);
   margin: 0 auto;
   height: 300px;
   width: 300px;
@@ -57,7 +57,7 @@ header nav a:hover {
 .main-section {
   margin: 0 auto;
   width: 400px;
-  transform: translateY(-50px) skewY(-4deg);
+  transform: translateY(-70px) skewY(-4deg);
 }
 
 .link {
@@ -71,14 +71,18 @@ header nav a:hover {
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 2px;
-  transform: skewY(-4deg);
+  transform: skewY(-4deg) translateY(-75px);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 h1 {
   padding: 0 0 20px;
   text-align: center;
   font-size: 24px;
   color: #ffd866;
-  transform: translateY(-50px);
+  transform: translateY(-70px);
   font-weight: 300;
 }
 p {
@@ -88,7 +92,9 @@ p {
   line-height: 29px;
   text-align: justify;
   border: 5px solid #ab9df2;
+  min-height: 282px;
   max-height: 282px;
+  overflow: hidden;
 }
 p:before {
   content: '';
