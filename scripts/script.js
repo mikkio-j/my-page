@@ -17,6 +17,9 @@ profile.addEventListener('click', function () {
 
   if (counter === 3) {
     profile.classList.add('profile-glitch');
+    setTimeout(function () {
+      window.location.replace('https://mikkio.com/hidden');
+    }, 3000);
   }
 });
 

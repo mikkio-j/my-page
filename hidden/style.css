@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: 'VT323', monospace;
+  background-color: #2d2a2e;
+  padding: 0;
+}
+
+.profile {
+  /* position: absolute; */
+  background-image: url(../images/profilealt.gif);
+  background-size: cover;
+  transform: translate(-18px, 0);
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  z-index: -1;
+}
+
+/* header {
+  margin-top: 100px;
+} */
+
+header div {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 80px; */
+}
+
+header div div {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #786666;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.main-section {
+  margin: 0 auto;
+  width: 400px;
+  transform: translateY(-50px) skewY(-4deg);
+}
+
+.link {
+  color: #ffd866;
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ff6188;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transform: skewY(-4deg);
+}
+h1 {
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffd866;
+  transform: translateY(-50px);
+  font-weight: 300;
+}
+p {
+  padding: 20px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 29px;
+  text-align: justify;
+  border: 5px solid #ab9df2;
+  max-height: 282px;
+}
+p:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
+  border: 2px solid #ab9df2;
+  z-index: -1;
+  -webkit-box-shadow: 1ch 1rem 0 #ab9df2;
+  box-shadow: 1ch 1rem 0 #ab9df2;
+  background-color: #2d2a2e;
+}
+
+@media (max-width: 450px) {
+  header div {
+    width: 90%;
+  }
+  .profile {
+    width: 100%;
+    margin-bottom: 30px;
+    transform: translateX(0);
+  }
+  .main-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .profile {
+    width: 100%;
+    transform: translateX(-20px);
+  }
+}
