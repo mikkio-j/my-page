@@ -10,6 +10,16 @@ const message = document.getElementById('message');
 const email = document.getElementById('email');
 const formMessage = document.querySelector('.form-message');
 
+let counter = 0;
+profile.addEventListener('click', function () {
+  counter++;
+  console.log(counter);
+
+  if (counter === 3) {
+    profile.classList.add('profile-glitch');
+  }
+});
+
 // Handling dark mode
 function toggleDarkMode() {
   profile.classList.toggle('profile-dark');

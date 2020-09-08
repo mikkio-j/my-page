@@ -74,6 +74,11 @@ header div {
   width: 200px;
 }
 
+.profile-glitch {
+  background-image: url(../images/profile.gif);
+  z-index: -1;
+}
+
 .profile-dark {
   background-image: url(../images/profilealt.png);
 }
