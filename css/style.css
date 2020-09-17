@@ -416,9 +416,9 @@ form button:hover {
   h1.section-title {
     margin-bottom: 10px;
   }
-  .main-section a {
+  /* .main-section a {
     text-decoration: none;
-  }
+  } */
   a.img-link {
     display: none;
   }
