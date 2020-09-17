@@ -160,7 +160,8 @@ header nav a:hover {
 }
 
 .img-link {
-  display: block;
+  display: flex;
+  align-items: center;
   height: 195px;
   width: 40%;
 }
