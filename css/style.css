@@ -445,3 +445,14 @@ form button:hover {
     height: 300px;
   }
 }
+@media (max-width: 340px) {
+  .project .description {
+    width: 100%;
+  }
+  form {
+    padding: 30px 20px;
+  }
+  .main-section .main-section__header {
+    text-align: right;
+  }
+}
