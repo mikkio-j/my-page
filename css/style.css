@@ -292,6 +292,62 @@ footer div div {
   color: #786666;
 }
 
+.bn30 {
+  border: 2px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(
+    -90deg,
+    #ff9100 0%,
+    #f10366 50%,
+    #6173ff 100%
+  );
+  padding: 0.7em 2em;
+  border-radius: 0px;
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: #000;
+}
+
+.dark .bn30 {
+  color: #c4c4bf;
+}
+
+.bn30 .text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+}
+
+.bn30:after {
+  content: '';
+  position: absolute;
+  margin: 1px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #fff;
+}
+
+.dark .bn30:after {
+  background: #2d2d2d;
+}
+
+.bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  /* box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1); */
+}
+
+.bn30:hover .text {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
 footer p {
   font-size: 16px;
   font-weight: 700;
@@ -383,10 +439,6 @@ form button {
   outline: none;
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
-}
-
-form button:hover {
-  text-decoration: underline;
 }
 
 .form-message {
