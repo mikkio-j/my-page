@@ -67,7 +67,7 @@ header div {
 
 .profile {
   position: absolute;
-  background-image: url(../images/profile.png);
+  background-image: url(../images/profile_small-min.png);
   background-size: cover;
   transform: translate(-40px, -50px);
   height: 200px;
@@ -80,7 +80,7 @@ header div {
 }
 
 .profile-dark {
-  background-image: url(../images/profilealt.png);
+  background-image: url(../images/profilealt_small-min.png);
 }
 
 header div div {
