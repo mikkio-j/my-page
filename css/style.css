@@ -177,6 +177,10 @@ header nav a:hover {
   border-radius: 3px;
 }
 
+.dark .project-links a {
+  color: #c4c4bf;
+}
+
 .project a:hover {
   opacity: 0.7;
 }
