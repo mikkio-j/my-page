@@ -566,7 +566,7 @@ form button {
   border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+  background: #504444;
 }
 ::-webkit-scrollbar-thumb:active {
   background: #4a4a4a;
@@ -577,10 +577,10 @@ form button {
   border-radius: 0px;
 }
 ::-webkit-scrollbar-track:hover {
-  background: #666666;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-track:active {
-  background: #333333;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
