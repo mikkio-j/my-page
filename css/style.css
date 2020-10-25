@@ -133,11 +133,11 @@ header nav a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   color: #fff;
-  opacity: 0.9;
+  opacity: 1;
   width: 49%;
-  min-height: 300px;
+  max-height: 300px;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -169,8 +169,11 @@ header nav a:hover {
 .img-link {
   display: flex;
   align-items: center;
-  height: 195px;
+  height: 100%;
   width: 40%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
 }
 
 .project-links a {
@@ -189,7 +192,7 @@ header nav a:hover {
 }
 
 .project a:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .project:hover {
@@ -215,10 +218,10 @@ header nav a:hover {
 
 .project .img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
   transition: 0.2s;
-  border-radius: 3px;
 }
 .project .img:hover {
   transform: scale(1.1);
@@ -499,6 +502,9 @@ form button {
   .form-message {
     top: -100px;
   }
+  .project {
+    max-height: 450px;
+  }
 }
 @media screen and (max-width: 650px) {
   .darkmode-switch {
@@ -522,7 +528,7 @@ form button {
     display: none;
   }
   .project .description {
-    padding-left: 0;
+    padding-left: 30px;
   }
   footer {
     height: auto;
